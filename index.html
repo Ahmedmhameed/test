@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>First assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        main {
+            width: 80%;
+            margin: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        th {
+            font-size: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        h3 {
+            padding: 20px 10px;
+            text-transform: capitalize;
+        }
+
+        h2 {
+            padding: 20px 0 10px;
+            text-transform: capitalize;
+        }
+
+        p {
+            line-height: 1.3;
+        }
+
+        img {
+            margin-top: 20px;
+        }
+
+        section {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        ul,
+        ol {
+            padding: 20px 5px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="group-q-1">
+            <h2> 1- Differentiate between each of the following</h2>
+            <article class="q-1">
+                <h3>Java SE, Java EE and Java ME</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Java SE</th>
+                            <th>Java EE</th>
+                            <th>Java ME</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>the most common edition of Java that is used to create standalone applications and
+                                applets for desktops and servers. It
+                                includes the basic libraries and APIs for developing Java applications.</td>
+                            <td>designed for developing large-scale, multi-tiered, and distributed enterprise
+                                applications. It includes additional
+                                libraries and APIs for developing web and enterprise applications</td>
+                            <td>subset of Java SE designed for resource-constrained devices like mobile phones, set-top
+                                boxes, and other embedded
+                                systems</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="q-2">
+                <h3>>> and >>> bitwise operators</h3>
+                <ul>
+                    <li>
+                        <strong>The >> operator</strong> preserves the sign bit, which means that the leftmost bit is
+                        replicated when
+                        shifting. This means that
+                        the result of a right shift can be negative if the original number was negative.
+                    </li>
+                    <li>
+                        <strong>The >>> operator</strong> does not preserve the sign bit, which means that the leftmost
+                        bit is always set
+                        to 0 when shifting.
+                        This means that the result of a right shift is always a positive number.
+                    </li>
+                </ul>
+            </article>
+            <article class="q-3">
+                <h3>static and final keywords when using variables, methods and classes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>static</th>
+                            <th>final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Variables</th>
+                            <td>
+                                make it belong to the class so you call it from the Class name
+                            </td>
+                            <td>
+                                You can't change its value after assign a value to it
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Methods</th>
+                            <td>make it belong to the class so you call it from the Class name</td>
+                            <td>Con't do override to this method</td>
+                        </tr>
+                        <tr>
+                            <th>Classes</th>
+                            <td>you can use it on the innerClass so you can make an object of it without make an Object
+                                of the outerClass </td>
+                            <td>cannot be extended by subclasses.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="q-4">
+                <h3>Checked and Unchecked exceptions</h3>
+                <ul>
+                    <li>
+                        <p><strong>Checked exceptions</strong> are exceptions that the code must handle or declare using
+                            the "throws"
+                            keyword<br>Examples:</p>
+                        <ul>
+                            <li>FileNotFoundException</li>
+                            <li>IOException</li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <p><strong>Unchecked exceptions</strong>that the code does not have to handle or
+                            declare<br>Examples:</p>
+                        <ul>
+                            <li>NullPointerException</li>
+                            <li>ArrayIndexOutOfBoundsException</li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </article>
+            <article class="q-5">
+                <h3>throw and throws</h3>
+                <ul>
+                    <li><strong>"throw"</strong> is used to explicitly throw an exception. It is followed by an instance
+                        of the exception
+                        class that is being
+                        thrown.</li>
+                    <li><strong>"throws"</strong> is used to declare that a method might throw one or more exceptions.
+                        It is followed by
+                        the names of the
+                        exception classes that might be thrown.</li>
+                </ul>
+            </article>
+            <article class="q-6">
+                <h3>Text and binary files</h3>
+                <ul>
+                    <li>
+                        <p><strong>Text files</strong> are files that contain human-readable text. They can be opened
+                            and edited using a
+                            text editor like Notepad or
+                            WordPad<br>Examples:</p>
+                        <ol>
+                            <li>.txt File</li>
+                            <li>.html File</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><strong>Binary files</strong> are files that contain data in a format that is not
+                            human-readable. They can
+                            only be opened and edited
+                            using a program that understands the format<br>Examples:</p>
+                        <ol>
+                            <li>.exe File</li>
+                            <li>.jpg File</li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="group-q-2">
+            <h2>2 -Explain how can you save the number 4200200200 into variable of type int</h2>
+            <p>The number 4200200200 cannot be directly saved in a variable of type "int" in Java, because the maximum
+                value that an
+                "int" can hold is 2,147,483,647 in positive.but if we pares it to Unsigned Int it will accept it</p>
+            <pre>
+                <code>
+                int <var>x</var> = Integer.parseUnsignedInt("4200200200");
+                </code>
+            </pre>
+        </section>
+        <section class="group-q-3">
+            <h2>3 -What is meant by lambda expression? Explain by real example</h2>
+            <p>A lambda expression is a way to create a small anonymous function that can be passed as an argument to a
+                method or
+                stored in a variable. It allows you to write concise and expressive code that is more readable than
+                using anonymous
+                inner classes.
+            </p>
+
+            <img src="./1.jpg" alt="img">
+        </section>
+    </main>
+</body>
+
+</html>
